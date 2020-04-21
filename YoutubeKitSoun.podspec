@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name             = 'YoutubeKit'
+  s.name             = 'YoutubeKitSoun'
   s.version          = '0.5.0'
   s.summary          = 'YoutubeKit is a video player for easily create a Youtube app.'
 
@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
 YoutubeKit is a video player that fully supports Youtube IFrame API and YoutubeDataAPI for easily create a Youtube app.
                        DESC
 
-  s.homepage         = 'https://github.com/rinov/YoutubeKit'
+  s.homepage         = 'https://github.com/davidgalarza/YoutubeKit'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rinov' => 'rinov@rinov.jp' }
   s.social_media_url = 'https://twitter.com/rinov0321'
