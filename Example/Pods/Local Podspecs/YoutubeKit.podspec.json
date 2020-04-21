@@ -18,8 +18,8 @@
   },
   "source_files": "Sources/**/*.swift",
   "source": {
-    "git": "https://github.com/rinov/YoutubeKit.git",
-    "tag": "0.5.0"
+    "git": "https://github.com/davidgalarza/YoutubeKit.git",
+    "tag": "0.6.0"
   },
   "resources": "Sources/YoutubeKit/player.html",
   "swift_version": "5.0"
