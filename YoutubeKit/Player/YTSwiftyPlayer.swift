@@ -333,8 +333,15 @@ extension YTSwiftyPlayer: WKScriptMessageHandler {
             updateQuality(message.body as? String)
             delegate?.player(self, didChangeQuality: playerQuality)
         case .onError:
-            if let message = message.body as? Int,
-                let error = YTSwiftyPlayerError(rawValue: message) {
+            var errorCode: Int?
+            if let intValue = message.body as? Int {
+                errorCode = intValue
+            } else if let stringValue = message.body as? String {
+                errorCode = Int(stringValue)
+            }
+            
+            if let code = errorCode,
+               let error = YTSwiftyPlayerError(rawValue: code) {
                 delegate?.player(self, didReceiveError: error)
             }
         case .onUpdateCurrentTime:
